@@ -59,7 +59,7 @@ while(capture.isOpened()):
         max_pixel = np.max(img_inverted)
         img_scaled = np.asarray(img_scaled)/max_pixel
 
-        testSample = np.array(img_scaled).reshape(1, 784)
+        testSample = np.array(img_scaled).reshape(1, 660)
         testPred = model.predict(testSample)
 
 
